@@ -29,14 +29,12 @@ public class Playlist extends ListManipulation {
         /**
          * Checks if the song can be added in case of the given conditions:
          * 
-         * Page 5, Lines 5-11 : "Ein Lied kann der Wiedergabeliste mehrfach hinzugefügt
-         * werden, d. h. die Wiedergabeliste kann Lieder mit identischen Kennungen und
-         * Attributen enthalten. Die Wiedergabeliste kann jedoch keine Lieder mit
-         * identischen Kennungen und unterschiedlichen Attributen enthalten. Die Kennung
-         * für ein Lied kann nach dem Entfernen neu vergeben werden, ebenso kann die
-         * Wiedergabeliste auch Lieder mit identischen Attributen, aber
-         * unterschiedlichen Kennungen enthalten."
-         * 
+         * A song can be added to the playlist more than once, in other words the
+         * playlist can contain songs with identical identifiers and attributes.
+         * However, the playlist cannot contain songs with identical identifiers and
+         * different attributes. The identifier for a song can be reassigned after
+         * removal, and the playlist can also contain songs with identical attributes
+         * but different identifiers.
          */
 
         while (iterator.hasNext()) {
